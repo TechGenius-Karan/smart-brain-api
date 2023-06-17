@@ -10,6 +10,8 @@ const profile = require('./controllers/profile');
 const image = require('./controllers/image');
 
 
+console.log('hello db')
+
 const db = knex({
 	client: 'pg',
 	connection: {
