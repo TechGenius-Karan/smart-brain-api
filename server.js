@@ -16,8 +16,8 @@ const db = knex({
     host: 'dpg-ci61ku98g3n4q9v8bqu0-a.singapore-postgres.render.com',
     port: 5432,
     database: 'postgres',
-    user: 'smart_brain_backend_3sm4_user',
-    password: '0OJfNoFN4jSRY6feaZIWBGd3tEvA3HD9',
+    user: 'postgres',
+    password: 'Kuka1301',
     ssl: {
       rejectUnauthorized: false
     }
@@ -29,6 +29,8 @@ const db = knex({
 const app = express();
 app.use(bodyParser.json());
 app.use(cors())
+
+console.log('hello');
 
 
 app.get('/', (req, res) => {
